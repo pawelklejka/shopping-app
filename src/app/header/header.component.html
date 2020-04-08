@@ -7,19 +7,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a href="#" (click)="onSelect('recipe')" class="nav-link">Recipes</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" (click)="onSelect('shopping-list')" class="nav-link"
-            >Shopping List</a
+          <a routerLink="/recipes" class="nav-link" routerLinkActive="active"
+            >Recipes</a
           >
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a routerLink="shopping-list" class="nav-link">Shopping List</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right dropdown">
         <li class="nav-item dropdown">
           <a
+            style="cursor: pointer;"
             class="nav-link dropdown-toggle"
-            href="#"
             id="navbarDropdown"
             role="button"
             data-toggle="dropdown"
@@ -29,9 +29,9 @@
             Dropdown
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Fetch</a>
+            <a class="dropdown-item" style="cursor: pointer;">Fetch</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Save</a>
+            <a class="dropdown-item" style="cursor: pointer;">Save</a>
           </div>
         </li>
       </ul>
